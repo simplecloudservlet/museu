@@ -1,0 +1,104 @@
+2025-09-14 20:45:25.267 [info] Extension host with pid 3342 started
+2025-09-14 20:45:25.372 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-09-14 20:45:25.584 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-09-14 20:45:25.683 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-09-14 20:45:25.904 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-09-14 20:45:26.369 [info] Eager extensions activated
+2025-09-14 20:45:26.375 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-09-14 20:45:26.386 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-09-14 20:45:26.460 [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+2025-09-14 20:45:26.761 [info] ExtensionService#_doActivateExtension GitHub.copilot, startup: false, activationEvent: 'onStartupFinished'
+2025-09-14 20:45:31.177 [info] ExtensionService#_doActivateExtension GitHub.copilot-chat, startup: false, activationEvent: 'onStartupFinished'
+2025-09-14 20:45:34.071 [error] Error: GitHubLoginFailed
+    at gO._authShowWarnings (/root/.vscode/extensions/github.copilot-chat-0.30.3/dist/extension.js:552:55936)
+    at gO.getCopilotToken (/root/.vscode/extensions/github.copilot-chat-0.30.3/dist/extension.js:552:54475)
+    at e3.getCopilotToken (/root/.vscode/extensions/github.copilot-chat-0.30.3/dist/extension.js:418:24219)
+    at Ov._fetchModels (/root/.vscode/extensions/github.copilot-chat-0.30.3/dist/extension.js:2539:4949)
+    at Ov.getAllChatModels (/root/.vscode/extensions/github.copilot-chat-0.30.3/dist/extension.js:2539:2710)
+    at A8.getAllChatEndpoints (/root/.vscode/extensions/github.copilot-chat-0.30.3/dist/extension.js:2539:15672)
+2025-09-14 20:45:48.409 [info] Extension host terminating: renderer closed the MessagePort
+2025-09-14 20:45:48.549 [info] Extension host with pid 3342 exiting with code 0
+2025-09-14 20:45:51.277 [info] Extension host with pid 3428 started
+2025-09-14 20:45:51.277 [info] Skipping acquiring lock for /home/lucio/angular2_curso/museu/User/workspaceStorage/92e65556c726eba87cd78fcb3f3691b6.
+2025-09-14 20:45:51.428 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-09-14 20:45:51.529 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-09-14 20:45:51.760 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*'
+2025-09-14 20:45:51.773 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-09-14 20:45:51.932 [info] Eager extensions activated
+2025-09-14 20:45:51.936 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-09-14 20:45:51.941 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-09-14 20:45:51.971 [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+2025-09-14 20:45:55.972 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'api', root cause: vscode.github
+2025-09-14 20:45:56.176 [info] ExtensionService#_doActivateExtension GitHub.copilot, startup: false, activationEvent: 'onStartupFinished'
+2025-09-14 20:45:58.488 [info] ExtensionService#_doActivateExtension GitHub.copilot-chat, startup: false, activationEvent: 'onStartupFinished'
+2025-09-14 20:46:05.185 [info] Extension host terminating: renderer closed the MessagePort
+2025-09-14 20:46:05.246 [info] Extension host with pid 3428 exiting with code 0
+2025-09-14 20:46:07.433 [info] Extension host with pid 3498 started
+2025-09-14 20:46:07.453 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-09-14 20:46:07.481 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-09-14 20:46:07.505 [info] ExtensionService#_doActivateExtension GitHub.copilot-chat, startup: false, activationEvent: 'onChatParticipant:github.copilot.editsAgent'
+2025-09-14 20:46:07.922 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: false, activationEvent: 'api', root cause: GitHub.copilot-chat
+2025-09-14 20:46:07.974 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'api', root cause: GitHub.copilot-chat
+2025-09-14 20:46:08.466 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-09-14 20:46:08.681 [info] Eager extensions activated
+2025-09-14 20:46:08.700 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-09-14 20:46:08.703 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-09-14 20:46:08.739 [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+2025-09-14 20:46:08.902 [info] ExtensionService#_doActivateExtension GitHub.copilot, startup: false, activationEvent: 'onStartupFinished'
+2025-09-14 20:46:15.033 [info] Extension host terminating: renderer closed the MessagePort
+2025-09-14 20:46:15.067 [info] Extension host with pid 3498 exiting with code 0
+2025-09-14 20:46:17.970 [info] Extension host with pid 3547 started
+2025-09-14 20:46:17.970 [info] Skipping acquiring lock for /home/lucio/angular2_curso/museu/User/workspaceStorage/92e65556c726eba87cd78fcb3f3691b6.
+2025-09-14 20:46:18.075 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-09-14 20:46:18.157 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-09-14 20:46:18.204 [info] ExtensionService#_doActivateExtension GitHub.copilot-chat, startup: false, activationEvent: 'onChatParticipant:github.copilot.editsAgent'
+2025-09-14 20:46:19.189 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: false, activationEvent: 'api', root cause: GitHub.copilot-chat
+2025-09-14 20:46:19.280 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'api', root cause: GitHub.copilot-chat
+2025-09-14 20:46:19.419 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-09-14 20:46:19.733 [info] Eager extensions activated
+2025-09-14 20:46:19.766 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-09-14 20:46:19.773 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-09-14 20:46:19.803 [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+2025-09-14 20:46:19.902 [info] ExtensionService#_doActivateExtension GitHub.copilot, startup: false, activationEvent: 'onStartupFinished'
+2025-09-14 20:46:22.351 [info] Extension host with pid 3603 started
+2025-09-14 20:46:22.364 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-09-14 20:46:22.402 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-09-14 20:46:22.422 [info] ExtensionService#_doActivateExtension GitHub.copilot-chat, startup: false, activationEvent: 'onChatParticipant:github.copilot.editsAgent'
+2025-09-14 20:46:22.661 [info] Extension host terminating: renderer closed the MessagePort
+2025-09-14 20:46:22.675 [info] Extension host with pid 3547 exiting with code 0
+2025-09-14 20:46:22.832 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: false, activationEvent: 'api', root cause: GitHub.copilot-chat
+2025-09-14 20:46:22.880 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'api', root cause: GitHub.copilot-chat
+2025-09-14 20:46:23.371 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-09-14 20:46:23.498 [info] Eager extensions activated
+2025-09-14 20:46:23.504 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-09-14 20:46:23.510 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-09-14 20:46:23.538 [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+2025-09-14 20:46:23.653 [info] ExtensionService#_doActivateExtension GitHub.copilot, startup: false, activationEvent: 'onStartupFinished'
+2025-09-14 20:46:32.119 [info] Extension host terminating: renderer closed the MessagePort
+2025-09-14 20:46:32.218 [info] Extension host with pid 3603 exiting with code 0
+2025-09-14 20:46:34.443 [info] Extension host with pid 3645 started
+2025-09-14 20:46:34.443 [info] Skipping acquiring lock for /home/lucio/angular2_curso/museu/User/workspaceStorage/40ca7775e9c7d2c3c96062f90254240b.
+2025-09-14 20:46:34.487 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-09-14 20:46:34.522 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-09-14 20:46:34.553 [info] ExtensionService#_doActivateExtension GitHub.copilot-chat, startup: false, activationEvent: 'onChatParticipant:github.copilot.editsAgent'
+2025-09-14 20:46:34.983 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: false, activationEvent: 'api', root cause: GitHub.copilot-chat
+2025-09-14 20:46:35.048 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'api', root cause: GitHub.copilot-chat
+2025-09-14 20:46:35.648 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-09-14 20:46:35.657 [info] ExtensionService#_doActivateExtension vscode.npm, startup: true, activationEvent: 'workspaceContains:package.json'
+2025-09-14 20:46:36.446 [info] Eager extensions activated
+2025-09-14 20:46:36.475 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-09-14 20:46:36.487 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-09-14 20:46:36.525 [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+2025-09-14 20:46:36.697 [info] ExtensionService#_doActivateExtension GitHub.copilot, startup: false, activationEvent: 'onStartupFinished'
+2025-09-14 20:46:41.473 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:json'
+2025-09-14 20:46:41.539 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:json'
+2025-09-14 20:46:41.603 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:json'
+2025-09-14 20:46:42.968 [error] Error: GitHubLoginFailed
+    at gO._authShowWarnings (/root/.vscode/extensions/github.copilot-chat-0.30.3/dist/extension.js:552:55936)
+    at gO.getCopilotToken (/root/.vscode/extensions/github.copilot-chat-0.30.3/dist/extension.js:552:54475)
+    at e3.getCopilotToken (/root/.vscode/extensions/github.copilot-chat-0.30.3/dist/extension.js:418:24219)
+    at Ov._fetchModels (/root/.vscode/extensions/github.copilot-chat-0.30.3/dist/extension.js:2539:4949)
+    at Ov.getAllChatModels (/root/.vscode/extensions/github.copilot-chat-0.30.3/dist/extension.js:2539:2710)
+    at A8.getAllChatEndpoints (/root/.vscode/extensions/github.copilot-chat-0.30.3/dist/extension.js:2539:15672)
+2025-09-14 20:47:30.410 [info] Extension host terminating: renderer closed the MessagePort
+2025-09-14 20:47:30.444 [info] Extension host with pid 3645 exiting with code 0

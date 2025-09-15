@@ -1,18 +1,36 @@
 <main class="main" role="main" aria-label="Main Content">
   <header>
-    <h1>Welcome to the Accessible Angular App</h1>
-    <p>Enhancing accessibility for all users.</p>
+    <h1>Museu do Bone Acessivel</h1>
+    <p>Acessibilidade para Todos.</p>
   </header>
-  
   <section aria-labelledby="features">
     <h2 id="features">Features</h2>
-    <ul>
-      <li>Screen reader compatibility</li>
-      <li>Semantic HTML structure</li>
-      <li>High contrast colors for better visibility</li>
-    </ul>
+    <ol role="tablist">
+      <li id="ch1Tab" role="tab">
+        <a href="#ch1Panel">Compatibilidade com Leitor de Tela</a>
+      </li>
+      <li id="ch2Tab" role="tab">
+        <a href="#ch2Panel">Estrutura HTML</a> 
+      </li>
+      <li id="ch3Tab" role="tab">
+        <a href="#ch3Panel">Alto contraste para melhor visibilidade</a>
+      </li>
+    </ol>
   </section>
 
+  <div>
+    <div id="ch1Panel" role="tabpanel" aria-labelledby="ch1Tab">
+      Conteudo do Capitulo 1 aqui
+    </div>
+    <div id="ch2Panel" role="tabpanel" aria-labelledby="ch2Tab">
+      Conteudo do Capitulo 2 aqui
+    </div>
+    <div id="ch3Panel" role="tabpanel" aria-labelledby="ch3Tab">
+      Conteudo do Capitulo 3 aqui
+    </div>
+  </div>
+
+  
   <section aria-labelledby="instructions">
     <h2 id="instructions">Getting Started</h2>
     <p>Follow the instructions below to navigate the application:</p>
