@@ -1,0 +1,28 @@
+<section>
+  <form>
+    <input type="text" placeholder="Chatbot consulta" #consulta />
+    <button
+        type="button"
+        class="btn waves-effect waves-light cyan darken-2"
+        (click)="consultaChatbot(consulta.value)"><i class="material-icons my-icon-size">assistant</i>ChatBot</button>
+  </form>
+
+  <textarea>
+    {{chatres}}
+  </textarea>
+  
+  <br/>
+  <br/>
+  <br/>
+  <form>
+    <input type="text" placeholder="Filtrar por palavra-chave" #filter />
+    <button class="primary" type="button" (click)="filterResults(filter.value)">Buscar</button>
+  </form>
+
+  <section class="results">
+    @for(housingLocation of filteredLocationList; track $index) {
+        <app-housing-location [housingLocation]="housingLocation"></app-housing-location>
+    }
+  </section>
+</section>
+

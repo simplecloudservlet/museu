@@ -1,0 +1,116 @@
+<main class="main" role="main" aria-label="Main Content">
+  <div class="centered-div-horizontal">
+    <header>
+      <h3>EcoMuseu do Boné (v.1.5)</h3>
+      <a [routerLink]="['/']">
+        <header class="brand-name">
+          <img
+            class="responsive-img"
+            src="/museu/assets/LOGOECOMUSEU.png"
+            alt="logo"
+            aria-hidden="true"
+            width="50%"
+          />
+        </header>
+      </a>
+      <p>Acessibilidade para Todos.</p>
+    </header>
+  </div>
+
+  <nav class="nav-extended">
+    <div class="nav-wrapper cyan">
+      <a href="/" class="brand-logo"
+        ><h6>{{ titulo }}</h6></a
+      >
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+        <i class="material-icons">menu</i>
+      </a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li>
+          <a routerLink="/pagina1-component">{{ opcao[0] }}</a>
+        </li>
+        <li>
+          <a routerLink="/pagina1-component">{{ opcao[1] }}</a>
+        </li>
+        <li>
+          <a routerLink="/pagina1-component">{{ opcao[2] }}</a>
+        </li>
+        <li>
+          <a routerLink="/pagina1-component">{{ opcao[3] }}</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--
+  <div class="centered-div-horizontal">
+      <button
+        type="button"
+        class="btn waves-effect waves-light cyan darken-2"
+        routerLink="pagina1-component"
+      >
+        <i class="material-icons my-icon-size">assistant</i>ChatBot
+      </button>
+  </div>
+-->
+
+  <section class="content">
+      <router-outlet></router-outlet>
+  </section>
+
+  <!-- Soh funciona a exibicao do sidenav se adicionar a variavel de template '#mobile' aqui-->
+  <!-- A variavel de template '#mobile' deve ser referenciada no app.component.ts -->
+  <ul class="sidenav" id="mobile-demo" #mobile>
+    <li>
+      <a routerLink="/pagina1-component">{{ opcao[0] }}</a>
+    </li>
+    <li>
+      <a routerLink="/pagina1-component">{{ opcao[1] }}</a>
+    </li>
+    <li>
+      <a routerLink="/pagina1-component">{{ opcao[2] }}</a>
+    </li>
+    <li>
+      <a routerLink="/pagina1-component">{{ opcao[3] }}</a>
+    </li>
+  </ul>
+
+  <!--
+  <section aria-labelledby="instructions">
+    <h2 id="instructions">Getting Started</h2>
+    <p>Follow the instructions below to navigate the application:</p>
+    <ol>
+      <li>Use the tab key to navigate through the links.</li>
+      <li>Press enter to activate a link.</li>
+      <li>Use screen reader commands to read the content.</li>
+    </ol>
+  </section>
+
+  <footer>
+    <p>For more information, visit our <a href="https://angular.dev" target="_blank" rel="noopener" aria-label="Angular Documentation">documentation</a>.</p>
+  </footer>
+</main>
+-->
+
+  <!--
+  <section aria-labelledby="features">
+    <h2 id="features">Features</h2>
+    <ol role="tablist">
+      <li id="ch1Tab" role="tab" aria-selected="true">
+        <a href="#ch1Panel">Compatibilidade com Leitor de Tela</a>
+      </li>
+      <li id="ch2Tab" role="tab" aria-selected="false">
+        <a href="#ch2Panel">Estrutura HTML</a>
+      </li>
+      <li id="ch3Tab" role="tab" aria-selected="false">
+        <a href="#ch3Panel">Alto contraste para melhor visibilidade</a>
+      </li>
+    </ol>
+  </section>
+
+  <div>
+    <div id="ch1Panel" role="tabpanel" aria-labelledby="ch1Tab">Conteudo do Capitulo 1 aqui</div>
+    <div id="ch2Panel" role="tabpanel" aria-labelledby="ch2Tab">Conteudo do Capitulo 2 aqui</div>
+    <div id="ch3Panel" role="tabpanel" aria-labelledby="ch3Tab">Conteudo do Capitulo 3 aqui</div>
+  </div>
+--></main>
