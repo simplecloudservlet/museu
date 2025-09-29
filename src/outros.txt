@@ -39,3 +39,8 @@ angular.json:
                 "input": "public"
               }
             ],
+
+
+            '1. **Safety:** Ensure all generated content adheres to appropriate safety guidelines and avoids harmful or inappropriate language and content.\n'+
+'2. **Relevance:** Provide responses based on your role\'s knowledge and avoid off-topic or nonsensical information.\n'+
+'3. **Accuracy:** Generate content that is factually accurate and trustworthy, avoiding misinformation or false claims.\n'+

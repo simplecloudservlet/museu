@@ -22,7 +22,7 @@ export class App implements AfterViewInit {
   @ViewChild('mobile') sideNav?: ElementRef;
 
   //title = 'controle-cidades';
-  titulo = 'Museu do Boné';
+  titulo = 'EcoMuseu do Boné';
   opcao = ['Página 1','Página 2','Página 3','Página 4'];
 
   googleDriveImageUrl: string = 'https://www.dropbox.com/scl/fi/h27kv6t75ih37mk8e8z5x/LOGOECOMUSEU.jpg?rlkey=e1nxodqbdkrfe37x7uqlw1362&st=8g6h0tta&dl=0';
