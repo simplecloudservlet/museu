@@ -1,9 +1,10 @@
-import { Component, inject } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, inject, ViewChild } from '@angular/core';
 import { HousingLocation } from '../housing-location/housing-location';
 import { HousingLocationInfo } from '../housinglocation';
 import { HousingService } from '../housing-service';
 import { CohereClientV2 } from 'cohere-ai';
 import { number, string } from 'cohere-ai/core/schemas';
+import { materialize } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -11,17 +12,33 @@ import { number, string } from 'cohere-ai/core/schemas';
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
-export class Home {
+export class Home implements AfterViewInit {
+
+  meuToken?: '6N9F6udZJhX1ynoL1kPnxaSkYTKcZeWzgnXT4XCR';
+
   filteredLocationList: HousingLocationInfo[] = [];
   housingLocationList: HousingLocationInfo[] = [];
   housingService: HousingService = inject(HousingService);
   
   chatres : Object | undefined;
 
+  status : Object | undefined;
+
+/*Para o Materialize*/
+  /*ViewChild: pai acessa o component filho dentro da classe */
+    @ViewChild('minhatextarea') textarea?: ElementRef;
+    @ViewChild('aguarde') aguarde?: any;
+
   constructor() {
     this.housingLocationList = this.housingService.getAllHousingLocations();
     this.filteredLocationList = this.housingLocationList;
+
   }
+  //Apos renderizar, atualiza a textarea 
+  ngAfterViewInit(): void {
+    M.textareaAutoResize(this.textarea?.nativeElement)
+  }
+
   filterResults(text: string) {
     if (!text) {
       this.filteredLocationList = this.housingLocationList;
@@ -38,6 +55,7 @@ export class Home {
       return;
     }
     console.log('Passei por aqui');
+    this.status = 'Aguarde...'
 
     //const { CohereClientV2 } = require('cohere-ai');
 
@@ -46,6 +64,7 @@ export class Home {
     });
 
 
+    text = "Responda com ate cem palavras: " + text;
 
     /*text = '###ROLE: You are an specialist in museums.'+
 '###GUARDRAILS:'+
@@ -101,8 +120,14 @@ text;*/
     //console.log(user.message.role); //works
     this.chatres = user.message.content[0].text; 
     console.log(this.chatres); //works =)
-
+  
       
+    M.textareaAutoResize(this.textarea?.nativeElement)
+
+    this.status = 'Pergunta respondida.'
+
     })();
   }
+
+  
 }

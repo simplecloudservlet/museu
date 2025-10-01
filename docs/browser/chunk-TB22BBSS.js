@@ -1,1 +1,0 @@
-import{a as o,n as e,t as r}from"./chunk-CBFEOYQB.js";import"./chunk-HGZ5NAYE.js";import"./chunk-Z2O23HM3.js";import{d as m}from"./chunk-PLB35GLF.js";var t=m(()=>{r()});t();export{e as AssumeRoleCommand,o as STSClient};

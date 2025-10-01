@@ -1,7 +1,8 @@
 <main class="main" role="main" aria-label="Main Content">
   <div class="centered-div-horizontal">
     <header>
-      <h3>EcoMuseu do Boné (v.1.5)</h3>
+      <h3>EcoMuseu do Boné</h3>
+      <h4>(v1.6)</h4>
       <a [routerLink]="['/']">
         <header class="brand-name">
           <img
@@ -30,13 +31,13 @@
           <a routerLink="/pagina1-component">{{ opcao[0] }}</a>
         </li>
         <li>
-          <a routerLink="/pagina1-component">{{ opcao[1] }}</a>
+          <a routerLink="/pagina2-component">{{ opcao[1] }}</a>
         </li>
         <li>
-          <a routerLink="/pagina1-component">{{ opcao[2] }}</a>
+          <a routerLink="/pagina3-component">{{ opcao[2] }}</a>
         </li>
         <li>
-          <a routerLink="/pagina1-component">{{ opcao[3] }}</a>
+          <a routerLink="/pagina4-component">{{ opcao[3] }}</a>
         </li>
       </ul>
     </div>
@@ -58,20 +59,22 @@
       <router-outlet></router-outlet>
   </section>
 
+  
+
   <!-- Soh funciona a exibicao do sidenav se adicionar a variavel de template '#mobile' aqui-->
-  <!-- A variavel de template '#mobile' deve ser referenciada no app.component.ts -->
+  <!-- A variavel de template '#mobile' deve ser referenciada no app.ts -->
   <ul class="sidenav" id="mobile-demo" #mobile>
     <li>
       <a routerLink="/pagina1-component">{{ opcao[0] }}</a>
     </li>
     <li>
-      <a routerLink="/pagina1-component">{{ opcao[1] }}</a>
+      <a routerLink="/pagina2-component">{{ opcao[1] }}</a>
     </li>
     <li>
-      <a routerLink="/pagina1-component">{{ opcao[2] }}</a>
+      <a routerLink="/pagina3-component">{{ opcao[2] }}</a>
     </li>
     <li>
-      <a routerLink="/pagina1-component">{{ opcao[3] }}</a>
+      <a routerLink="/pagina4-component">{{ opcao[3] }}</a>
     </li>
   </ul>
 

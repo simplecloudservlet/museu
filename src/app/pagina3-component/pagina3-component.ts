@@ -4,14 +4,14 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 
 
 @Component({
-  selector: 'app-pagina1-component',
+  selector: 'app-pagina3-component',
   imports: [RouterLink],
-  templateUrl: './pagina1-component.html',
-  styleUrl: './pagina1-component.css'
+  templateUrl: './pagina3-component.html',
+  styleUrl: './pagina3-component.css'
 })
-export class Pagina1Component {
+export class Pagina3Component {
 
-  titlePagina1 = 'PÁGINA 1'  
+  titlePagina3 = 'PÁGINA 3'  
   constructor(private route: ActivatedRoute){}
   
 }

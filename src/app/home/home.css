@@ -10,7 +10,8 @@ input[type="text"] {
   border: solid 1px;
   padding: 10px;
   border-radius: 8px;
-  margin-right: 4px;
+  margin-left: 10px;
+  margin-right: 10px;
   display: inline-block;
   width: 30%;
 }
@@ -33,4 +34,14 @@ input[type="text"] {
   .results {
       grid-template-columns: 1fr;
   }    
+}
+
+textarea {
+  font-size: 4rem;
+  letter-spacing: 1px;
+  padding: 10px;
+  line-height: 3.0;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  box-shadow: 1px 1px 1px #999999;
 }
