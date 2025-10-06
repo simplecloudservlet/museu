@@ -80,6 +80,18 @@ text;*/
         model: 'command-a-03-2025',
         messages: [
           {
+            role: 'system',
+            content: 'You response in concise sentences.',
+          },
+          {
+            role: 'user',
+            content: 'Hello',
+          },
+          {
+            "role":"assistant",
+            "content":"Hi, how can I help you?"
+          },
+          {
             role: 'user',
             content: text,
           },
