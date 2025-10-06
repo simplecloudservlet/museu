@@ -5,10 +5,11 @@ import * as M from 'materialize-css';
 import {RouterModule} from '@angular/router';
 
 import {Home} from './home/home';
+import { FooterComponent } from "./footer-component/footer-component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterModule],
+  imports: [RouterModule, FooterComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
