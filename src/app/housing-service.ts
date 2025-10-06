@@ -5,14 +5,15 @@ import {HousingLocationInfo} from './housinglocation';
   providedIn: 'root'
 })
 export class HousingService {
-  readonly baseUrl = 'https://angular.dev/assets/images/tutorials/common';
+  //readonly baseUrl = 'https://angular.dev/assets/images/tutorials/common';
+  readonly baseUrl = 'https://github.com/simplecloudservlet/repositoriomuseu/blob/main';
   housingLocationList: HousingLocationInfo[] = [
     {
       id: 0,
-      name: 'Acme Fresh Start Housing',
-      city: 'Chicago',
-      state: 'IL',
-      photo: `${this.baseUrl}/bernard-hermant-CLKGGwIBTaY-unsplash.jpg`,
+      name: 'Logo do Ecomuseu (audiodescrição)',
+      city: 'Apucarana',
+      state: 'PR',
+      photo: `${this.baseUrl}/LOGOECOMUSEU.jpg`,
       availableUnits: 4,
       wifi: true,
       laundry: true,
