@@ -6,7 +6,7 @@ import {HousingLocationInfo} from './housinglocation';
 })
 export class HousingService {
   //readonly baseUrl = 'https://angular.dev/assets/images/tutorials/common';
-  readonly baseUrl = 'https://github.com/simplecloudservlet/repositoriomuseu/blob/main';
+  readonly baseUrl = 'https://simplecloudservlet.github.io/repositoriomuseu/assets';
   housingLocationList: HousingLocationInfo[] = [
     {
       id: 0,
