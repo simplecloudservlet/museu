@@ -25,6 +25,15 @@ export class HousingService {
       photo: `${this.baseUrl}/fotos/foto_2022_05_09_at_15_00_13.jpeg`,
       data: '20/05/2022',
       info: 'Foto'
+    },
+    {
+      id: 2,
+      name: 'Foto de Bonés',
+      city: 'Apucarana',
+      state: 'PR',
+      photo: `${this.baseUrl}/fotos/foto_2022_05_09_at_15_00_24.jpeg`,
+      data: '09/05/2022',
+      info: 'Foto'
     }
     
   ];
