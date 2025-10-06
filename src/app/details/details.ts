@@ -6,12 +6,12 @@ import {FormControl, FormGroup, ReactiveFormsModule} from '@angular/forms';
 
 @Component({
   selector: 'app-details',
-  imports: [ReactiveFormsModule],
+  imports: [RouterLink,ReactiveFormsModule],
   templateUrl: './details.html',
   styleUrl: './details.css'
 })
 export class Details {
-  route: ActivatedRoute = inject(ActivatedRoute);
+  //route: ActivatedRoute = inject(ActivatedRoute);
   housingService = inject(HousingService);
   housingLocation: HousingLocationInfo | undefined;
 
@@ -21,9 +21,11 @@ export class Details {
     email: new FormControl(''),
   });
 
-  constructor() {
+  constructor(private route: ActivatedRoute) {
+    
     const housingLocationId = Number(this.route.snapshot.params['id']);
     this.housingLocation = this.housingService.getHousingLocationById(housingLocationId);
+    
   }
 
   submitApplication() {
