@@ -13,7 +13,7 @@ export class HousingService {
       name: 'Logo do Ecomuseu (audiodescrição)',
       city: 'Apucarana',
       state: 'PR',
-      photo: `${this.baseUrl}/LOGOECOMUSEU.jpg`,
+      photo: `${this.baseUrl}/LOGOECOMUSEU.png`,
       availableUnits: 4,
       wifi: true,
       laundry: true,
