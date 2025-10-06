@@ -10,7 +10,7 @@ export class HousingService {
   housingLocationList: HousingLocationInfo[] = [
     {
       id: 0,
-      name: 'Logo do Ecomuseu (audiodescrição)',
+      name: 'Logo do EcoMuseu',
       city: 'Apucarana',
       state: 'PR',
       photo: `${this.baseUrl}/LOGOECOMUSEU.png`,
@@ -22,7 +22,7 @@ export class HousingService {
       name: 'Foto do Museu',
       city: 'Apucarana',
       state: 'PR',
-      photo: `${this.baseUrl}/fotos/foto_2022_05_09_at_15_00_13.jpeg`,
+      photo: `${this.baseUrl}/fotos/foto_2022_05_09_at_15_00_13.png`,
       data: '20/05/2022',
       info: 'Foto'
     },
@@ -31,7 +31,7 @@ export class HousingService {
       name: 'Foto de Bonés',
       city: 'Apucarana',
       state: 'PR',
-      photo: `${this.baseUrl}/fotos/foto_2022_05_09_at_15_00_24.jpeg`,
+      photo: `${this.baseUrl}/fotos/foto_2022_05_09_at_15_00_24.png`,
       data: '09/05/2022',
       info: 'Foto'
     },
@@ -40,7 +40,7 @@ export class HousingService {
       name: 'Foto de Bonés',
       city: 'Apucarana',
       state: 'PR',
-      photo: `${this.baseUrl}/fotos/foto_2022_05_20_at_11_15_46.jpeg`,
+      photo: `${this.baseUrl}/fotos/foto_2022_05_20_at_11_15_46.png`,
       data: '20/05/2022',
       info: 'Foto'
     },

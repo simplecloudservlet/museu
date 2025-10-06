@@ -1,0 +1,25 @@
+<a routerLink="/">VOLTAR</a>
+<form>
+    <input type="text" width="10" placeholder="Digite sua pergunta aqui" #consulta/>
+    <button
+        type="button"
+        class="btn waves-effect waves-light cyan darken-2"
+        (click)="consultaChatbot(consulta.value)"><i class="material-icons my-icon-size">assistant</i>ChatBot</button>
+  </form>
+  <h4 id="aguarde" #aguarde>{{status}}</h4>
+ 
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+           <!-- A variavel de template '#minhatextarea' deve ser referenciada no home.ts -->
+          <textarea id="textarea" class="materialize-textarea" #minhatextarea>
+          {{chatres}}  
+          </textarea>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!-- <textarea id="textarea">Resposta: {{chatres}}</textarea> -->
+    

@@ -23,11 +23,8 @@ export class App implements AfterViewInit {
 
   //title = 'controle-cidades';
   titulo = 'EcoMuseu do Boné';
-  opcao = ['Página 1','Página 2','Página 3','Página 4'];
+  opcao = ['Página 1','Página 2','Página 3','Página 4', 'ChatBot'];
 
-  googleDriveImageUrl: string = 'https://www.dropbox.com/scl/fi/h27kv6t75ih37mk8e8z5x/LOGOECOMUSEU.jpg?rlkey=e1nxodqbdkrfe37x7uqlw1362&st=8g6h0tta&dl=0';
-  //googleDriveImageUrl: string = 'https://angular.dev/assets/images/tutorials/common/bernard-hermant-CLKGGwIBTaY-unsplash.jpg';
-  
   novovalor: number=123;
   background: any;
 

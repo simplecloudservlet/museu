@@ -1,11 +1,11 @@
 .listing {
-  background: var(--accent-color);
+  background: #e0f7fa;/*var(--accent-color);*/
   border-radius: 30px;
   padding-bottom: 30px;
 }
 .listing-heading {
   /*color: var(--primary-color);*/
-  color: blueviolet;
+  color: #00bcd4;
   padding: 10px 20px 0 20px;
 }
 .listing-photo {
@@ -23,7 +23,7 @@
 section.listing a {
   padding-left: 20px;
   text-decoration: none;
-  color: blueviolet /*(--primary-color);*/
+  color: #00bcd4;
 }
 section.listing a::after {
   content: "\203A";

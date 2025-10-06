@@ -2,7 +2,7 @@
   <div class="centered-div-horizontal">
     <header>
       <h3>EcoMuseu do Boné</h3>
-      <h4>(v1.8)</h4>
+      <h4>(v1.9)</h4>
       <a [routerLink]="['/']">
         <header class="brand-name">
           <img
@@ -27,6 +27,9 @@
         <i class="material-icons">menu</i>
       </a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li>
+          <a routerLink="/chatbot-component">{{ opcao[4] }}</a>
+        </li>
         <li>
           <a routerLink="/pagina1-component">{{ opcao[0] }}</a>
         </li>
@@ -64,6 +67,9 @@
   <!-- Soh funciona a exibicao do sidenav se adicionar a variavel de template '#mobile' aqui-->
   <!-- A variavel de template '#mobile' deve ser referenciada no app.ts -->
   <ul class="sidenav" id="mobile-demo" #mobile>
+    <li>
+      <a routerLink="/chatbot-component">{{ opcao[4] }}</a>
+    </li>
     <li>
       <a routerLink="/pagina1-component">{{ opcao[0] }}</a>
     </li>
