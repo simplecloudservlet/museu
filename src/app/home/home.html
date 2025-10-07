@@ -3,9 +3,9 @@
   <br/>
   <br/>
   <form aria-label="form">
-    <label aria-labelledby="FILTRAR">Filtrar</label>
-    <input aria-labelledby="FILTRAR POR PALAVRA-CHAVE" type="text" placeholder="Filtrar por palavra-chave" #filter />
-    <button aria-labelledby="BUSCAR" class="btn waves-effect waves-light cyan darken-2" type="button" (click)="filterResults(filter.value)">Buscar</button>
+    <label id="label-filtrar" aria-labelledby="label-filtrar">Filtrar</label>
+    <input id="input-filtrar" aria-labelledby="input-filtrar" type="text" placeholder="Filtrar por palavra-chave" #filter />
+    <button id="button-filtrar" aria-labelledby="button-filtrar" class="btn waves-effect waves-light cyan darken-2" type="button" (click)="filterResults(filter.value)">Buscar</button>
   </form>
 
   <section aria-label="section" class="results">

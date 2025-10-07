@@ -1,14 +1,16 @@
-<main class="main" role="main" aria-label="Main Content">
+<main class="main" role="main" aria-label="Conteudo Principal da Pagina">
   <div class="centered-div-horizontal">
-    <header>
+    <header aria-label="Cabecalho">
       <h3>{{titulo}}</h3>
       <h4>{{versao}}</h4>
       <a [routerLink]="['/']">
         <header class="brand-name">
           <img
+            id="img-logo"
+            aria-labelledby="img-logo"
             class="responsive-img"
             src="/museu/assets/LOGOECOMUSEU.png"
-            alt="logo"
+            alt="Logotipo do Ecomuseu do Boné"
             aria-hidden="true"
             width="50%"
           />
@@ -19,10 +21,10 @@
   </div>
 
   <nav class="nav-extended">
-    <div class="nav-wrapper cyan">
-      <a href="/museu" class="brand-logo"
-        ><h6>{{ titulo }}</h6></a
-      >
+    <div class="nav-wrapper cyan" aria-label="Menu para as Outras Paginas">
+      <a href="/museu" class="brand-logo">
+        <h6>{{ titulo }}</h6>
+      </a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger">
         <i class="material-icons">menu</i>
       </a>
@@ -58,7 +60,7 @@
   </div>
 -->
 
-  <section class="content">
+  <section aria-label="Conteudo" class="content">
       <router-outlet></router-outlet>
   </section>
 
