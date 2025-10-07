@@ -1,3 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 @import "materialize-css/dist/css/materialize.css";
 @import "material-icons/iconfont/material-icons.css";
+
+
+div {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  width: auto;
+  padding: 30px;
+  border-radius: 20px;
+  
+}
+
+.good {
+  background-color: #5a80a9;
+  color:azure;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 20px;
+}

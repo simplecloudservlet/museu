@@ -11,38 +11,38 @@
             class="responsive-img"
             src="/museu/assets/LOGOECOMUSEU.png"
             alt="Logotipo do Ecomuseu do Boné"
-            aria-hidden="true"
             width="50%"
           />
+          <figcaption>Logotipo do Ecomuseu do Boné</figcaption>
         </header>
       </a>
       <p>Acessibilidade para Todos.</p>
     </header>
   </div>
 
-  <nav class="nav-extended">
-    <div class="nav-wrapper cyan" aria-label="Menu para as Outras Paginas">
-      <a href="/museu" class="brand-logo">
-        <h6>{{ titulo }}</h6>
+  <nav class="nav-extended good">
+    <div aria-label="Menu para as Outras Paginas">
+      <a href="/museu">
+        <h3 class="good">{{ titulo }}</h3>
       </a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger">
         <i class="material-icons">menu</i>
       </a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
         <li>
-          <a routerLink="/chatbot-component">{{ opcao[4] }}</a>
+          <a class="good" routerLink="/chatbot-component">{{ opcao[4] }}</a>
         </li>
         <li>
-          <a routerLink="/pagina1-component">{{ opcao[0] }}</a>
+          <a class="good" routerLink="/pagina1-component">{{ opcao[0] }}</a>
         </li>
         <li>
-          <a routerLink="/pagina2-component">{{ opcao[1] }}</a>
+          <a class="good" routerLink="/pagina2-component">{{ opcao[1] }}</a>
         </li>
         <li>
-          <a routerLink="/pagina3-component">{{ opcao[2] }}</a>
+          <a class="good" routerLink="/pagina3-component">{{ opcao[2] }}</a>
         </li>
         <li>
-          <a routerLink="/pagina4-component">{{ opcao[3] }}</a>
+          <a class="good" routerLink="/pagina4-component">{{ opcao[3] }}</a>
         </li>
       </ul>
     </div>
@@ -68,6 +68,7 @@
 
   <!-- Soh funciona a exibicao do sidenav se adicionar a variavel de template '#mobile' aqui-->
   <!-- A variavel de template '#mobile' deve ser referenciada no app.ts -->
+ 
   <ul class="sidenav" id="mobile-demo" #mobile>
     <li>
       <a routerLink="/chatbot-component">{{ opcao[4] }}</a>

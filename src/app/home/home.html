@@ -2,11 +2,13 @@
   <br/>
   <br/>
   <br/>
+  <div class="good">
   <form aria-label="form">
     <label id="label-filtrar" aria-labelledby="label-filtrar">Filtrar</label>
     <input id="input-filtrar" aria-labelledby="input-filtrar" type="text" placeholder="Filtrar por palavra-chave" #filter />
     <button id="button-filtrar" aria-labelledby="button-filtrar" class="btn waves-effect waves-light cyan darken-2" type="button" (click)="filterResults(filter.value)">Buscar</button>
   </form>
+  </div>
 
   <section aria-label="section" class="results">
     @for(housingLocation of filteredLocationList; track $index) {
