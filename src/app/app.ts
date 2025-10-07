@@ -1,10 +1,8 @@
-import { AfterViewInit, Component, ElementRef, OnInit, signal, ViewChild } from '@angular/core';
-import { RouterOutlet, RouterLink } from '@angular/router';
+import { AfterViewInit, Component, ElementRef, signal, ViewChild } from '@angular/core';
 import * as M from 'materialize-css';
 
 import {RouterModule} from '@angular/router';
 
-import {Home} from './home/home';
 import { FooterComponent } from "./footer-component/footer-component";
 
 @Component({
@@ -16,14 +14,14 @@ import { FooterComponent } from "./footer-component/footer-component";
 
 
 export class App implements AfterViewInit {
-  protected readonly title = signal('museu-app');
+  //protected readonly title = signal('museu-app');
 
 /*Para o Materialize*/
   /*ViewChild: pai acessa o component filho dentro da classe */
   @ViewChild('mobile') sideNav?: ElementRef;
 
-  //title = 'controle-cidades';
   titulo = 'EcoMuseu do Boné';
+  versao = '1.12';
   opcao = ['Página 1','Página 2','Página 3','Página 4', 'ChatBot'];
 
   novovalor: number=123;
