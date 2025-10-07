@@ -2,8 +2,6 @@ import { AfterViewInit, Component, ElementRef, inject, ViewChild } from '@angula
 import { HousingLocation } from '../housing-location/housing-location';
 import { HousingLocationInfo } from '../housinglocation';
 import { HousingService } from '../housing-service';
-import { number, string } from 'cohere-ai/core/schemas';
-import { materialize } from 'rxjs';
 
 @Component({
   selector: 'app-home',
