@@ -44,7 +44,15 @@ export class HousingService {
       data: '20/05/2022',
       info: 'Foto'
     },
-    
+    {
+      id: 4,
+      name: 'Vídeo de Bonés',
+      city: 'Apucarana',
+      state: 'PR',
+      photo: `${this.baseUrl}/videos/video_2024_09_01_at_13_16_36.mp4`,
+      data: '01/09/2024',
+      info: 'Video de Bonés de Apucarana'
+    }
     
   ];
 
