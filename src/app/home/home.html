@@ -1,19 +1,17 @@
-<section>
-
-  
+<section aria-label="section">  
   <br/>
   <br/>
   <br/>
-  <form>
-    <input type="text" placeholder="Filtrar por palavra-chave" #filter />
-    <button class="btn waves-effect waves-light cyan darken-2" type="button" (click)="filterResults(filter.value)">Buscar</button>
+  <form aria-label="form">
+    <label aria-labelledby="FILTRAR">Filtrar</label>
+    <input aria-labelledby="FILTRAR POR PALAVRA-CHAVE" type="text" placeholder="Filtrar por palavra-chave" #filter />
+    <button aria-labelledby="BUSCAR" class="btn waves-effect waves-light cyan darken-2" type="button" (click)="filterResults(filter.value)">Buscar</button>
   </form>
 
-  <section class="results">
+  <section aria-label="section" class="results">
     @for(housingLocation of filteredLocationList; track $index) {
         <app-housing-location [housingLocation]="housingLocation"></app-housing-location>
     }
   </section>
-  
 </section>
 
