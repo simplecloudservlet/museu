@@ -19,5 +19,6 @@ div {
   color:azure;
   font-size: 2rem;
   font-weight: bold;
+  width: auto;
   border-radius: 20px;
 }

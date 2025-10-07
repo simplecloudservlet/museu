@@ -1,12 +1,14 @@
 
     <section class="listing">
       <img
+        aria-label="Exibicao de uma Imagem"
         class="listing-photo"
         [src]="housingLocation().photo"
-        alt="Exterior photo of {{ housingLocation().name }}"
+        alt="Exibicao da imagem de {{ housingLocation().name }}"
         crossorigin
       />
+      <figcaption>Exibicao da imagem</figcaption>
       <h2 class="listing-heading">{{ housingLocation().name }}</h2>
-      <p class="listing-location">{{ housingLocation().city }}, {{ housingLocation().state }}</p>
+      <!--<p class="listing-location">{{ housingLocation().city }}, {{ housingLocation().state }}</p>-->
       <a [routerLink]="['/details', housingLocation().id]">Mais Detalhes</a>
     </section>
