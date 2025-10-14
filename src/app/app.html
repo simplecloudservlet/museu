@@ -4,7 +4,8 @@
       <h3>{{titulo}}</h3>
       <h4>{{versao}}</h4>
       <button aria-label="Botão para leitor de tela">Leitor de Tela</button>
-        <header class="brand-name">
+        
+        <div role="img">
           <img
             id="img-logo"
             aria-label="Imagem do Logotipo do Ecomuseu do Boné"
@@ -14,14 +15,23 @@
             alt="Imagem do Logotipo do Ecomuseu do Boné"
             width="50%"
           />
-        </header>
+          <img
+            id="img-qrcode"
+            aria-label="Imagem do QRCODE do site"
+            class="responsive-img"
+            src="/museu/assets/qrcode.png"
+            alt="Imagem do QRCODE do site"
+            width="50%"
+          />
+        </div>
+
+        
       <h4>Acessibilidade para Todos.</h4>
     </header>
   </div>
 
-  <div aria-label="Menu para as Outras Paginas">
-    <nav class="nav-extended good">
-    
+  <nav class="nav-extended good">
+    <div aria-label="Menu para as Outras Paginas">
         <h3 class="good">{{ titulo }}</h3>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger">
         <i class="material-icons">menu</i>
@@ -43,9 +53,9 @@
           <a class="good" routerLink="/pagina4-component">{{ opcao[3] }}</a>
         </li>
       </ul>
-    </nav>
-    
-  </div>
+    </div>
+  </nav>
+
   <!--
   <div class="centered-div-horizontal">
       <button
@@ -67,6 +77,7 @@
   <!-- Soh funciona a exibicao do sidenav se adicionar a variavel de template '#mobile' aqui-->
   <!-- A variavel de template '#mobile' deve ser referenciada no app.ts -->
 
+  <section aria-label="Menu de páginas">
   <ul aria-label="Lista" role="link" tabindex="0" (keydown)="'Nothing'" role='1' alt="Lista de exibicao de paginas" class="sidenav" id="mobile-demo" #mobile>
     <li aria-label="chatbot" role="link" tabindex="0">
       <a tabindex="0" aria-label="chatbot" alt="chatbot" role="link" routerLink="/chatbot-component">{{ opcao[4] }}</a>
@@ -84,6 +95,7 @@
       <a tabindex="0" aria-label="pagina4" alt="pagina4" role="link" routerLink="/pagina4-component">{{ opcao[3] }}</a>
     </li>
   </ul>
+  </section>
 
   <!--
   <section aria-labelledby="instructions">
