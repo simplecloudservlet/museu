@@ -19,6 +19,7 @@ export const routeConfig: Routes = [
     {path: 'pagina3-component', component: Pagina3Component, title:'Pagina 3'},
     {path: 'pagina4-component', component: Pagina4Component, title:'Pagina 4'},
     {path: 'details/:id',    component: Details,    title: 'Home details',  },
+    
 ];
 
 export default routeConfig;

@@ -3,8 +3,8 @@
     <header aria-label="Cabecalho">
       <h3>{{titulo}}</h3>
       <h4>{{versao}}</h4>
-      <a [routerLink]="['/']">
-        <header class="brand-name">
+      <button aria-label="ABRIR">O que tem aqui?</button>
+        <header role="img" class="brand-name">
           <img
             id="img-logo"
             aria-labelledby="img-logo"
@@ -15,16 +15,13 @@
           />
           <figcaption>Logotipo do Ecomuseu do Boné</figcaption>
         </header>
-      </a>
       <p>Acessibilidade para Todos.</p>
     </header>
   </div>
 
   <nav class="nav-extended good">
     <div aria-label="Menu para as Outras Paginas">
-      <a href="/museu">
         <h3 class="good">{{ titulo }}</h3>
-      </a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger">
         <i class="material-icons">menu</i>
       </a>
@@ -68,22 +65,22 @@
 
   <!-- Soh funciona a exibicao do sidenav se adicionar a variavel de template '#mobile' aqui-->
   <!-- A variavel de template '#mobile' deve ser referenciada no app.ts -->
- 
-  <ul class="sidenav" id="mobile-demo" #mobile>
-    <li>
-      <a routerLink="/chatbot-component">{{ opcao[4] }}</a>
+
+  <ul aria-label="Lista" role="link" tabindex="0" (keydown)="'Nothing'" role='1' alt="Lista de exibicao de paginas" class="sidenav" id="mobile-demo" #mobile>
+    <li aria-label="chatbot" role="link" tabindex="0">
+      <a tabindex="0" aria-label="chatbot" alt="chatbot" role="link" routerLink="/chatbot-component">{{ opcao[4] }}</a>
     </li>
-    <li>
-      <a routerLink="/pagina1-component">{{ opcao[0] }}</a>
+    <li aria-label="pagina1" role="link" tabindex="0">
+      <a tabindex="0" aria-label="pagina1" alt="pagina1" role="link" routerLink="/pagina1-component">{{ opcao[0] }}</a>
     </li>
-    <li>
-      <a routerLink="/pagina2-component">{{ opcao[1] }}</a>
+    <li aria-label="pagina2" role="link" tabindex="0">
+      <a tabindex="0" aria-label="pagina2" alt="pagina2" role="link" routerLink="/pagina2-component">{{ opcao[1] }}</a>
     </li>
-    <li>
-      <a routerLink="/pagina3-component">{{ opcao[2] }}</a>
+    <li aria-label="pagina3" role="link" tabindex="0">
+      <a tabindex="0" aria-label="pagina3" alt="pagina3" role="link" routerLink="/pagina3-component">{{ opcao[2] }}</a>
     </li>
-    <li>
-      <a routerLink="/pagina4-component">{{ opcao[3] }}</a>
+    <li aria-label="pagina4" role="link" tabindex="0">
+      <a tabindex="0" aria-label="pagina4" alt="pagina4" role="link" routerLink="/pagina4-component">{{ opcao[3] }}</a>
     </li>
   </ul>
 
