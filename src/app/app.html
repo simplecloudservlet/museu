@@ -5,7 +5,7 @@
       <h4>{{versao}}</h4>
       <button aria-label="Botão para leitor de tela">Leitor de Tela</button>
         
-        <div role="img">
+        <div role="img" aria-label="Imagens do cabecalho da pagina">
           <img
             id="img-logo"
             aria-label="Imagem do Logotipo do Ecomuseu do Boné"
@@ -29,6 +29,30 @@
       <h4>Acessibilidade para Todos.</h4>
     </header>
   </div>
+
+
+<section aria-labelledby="menu-paginas">
+<ul id="menu-paginas" aria-label="Menu das paginas" class="left hide-on-med-and-down">
+        <li>
+          <a class="good" routerLink="/chatbot-component">{{ opcao[4] }}</a>
+        </li>
+        <li>
+          <a class="good" routerLink="/pagina1-component">{{ opcao[0] }}</a>
+        </li>
+        <li>
+          <a class="good" routerLink="/pagina2-component">{{ opcao[1] }}</a>
+        </li>
+        <li>
+          <a class="good" routerLink="/pagina3-component">{{ opcao[2] }}</a>
+        </li>
+        <li>
+          <a class="good" routerLink="/pagina4-component">{{ opcao[3] }}</a>
+        </li>
+      </ul>
+
+</section>
+
+
 
   <nav class="nav-extended good">
     <div aria-label="Menu para as Outras Paginas">
