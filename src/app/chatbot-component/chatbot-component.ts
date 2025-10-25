@@ -58,6 +58,21 @@ text;*/
     (async () => {
       const response = await cohere.chat({
         model: 'command-a-03-2025',
+        documents: [
+          {
+            "data" : {
+              "title": "DOC1",
+              "snippet": "O EcoMuseu do Boné tem uma sede propria."
+            }
+          },
+          {
+            "data" : {
+              "title": "DOC2",
+              "snippet": "A sede propria fica na Avenida Curitiba."
+            }
+          },
+          
+        ],
         messages: [
           {
             role: 'system',

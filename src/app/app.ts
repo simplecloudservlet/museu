@@ -21,7 +21,7 @@ export class App implements AfterViewInit {
   @ViewChild('mobile') sideNav?: ElementRef;
 
   titulo = 'EcoMuseu do Boné';
-  versao = 'versão: 1.21';
+  versao = 'versão: 1.22 (RAG)';
   opcao = ['Página 1','Página 2','Página 3','Página 4', 'ChatBot'];
 
   novovalor: number=123;
